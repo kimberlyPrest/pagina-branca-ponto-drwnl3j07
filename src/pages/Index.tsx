@@ -1,13 +1,14 @@
-const Index = () => {
-  return (
-    <div className="w-full h-full flex items-center justify-center">
-      <div
-        className="w-[6px] h-[6px] md:w-[8px] md:h-[8px] rounded-full bg-black animate-fade-in"
-        aria-label="A single black dot"
-        role="img"
-      />
-    </div>
-  )
-}
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export default Index
+const Index = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    navigate('/separacao', { replace: true });
+  }, [navigate]);
+
+  return null;
+};
+
+export default Index;
