@@ -1,0 +1,19 @@
+# logs
+node_modules
+.DS_Store
+dist
+dist-ssr
+dev-dist
+*.local
+
+# .env
+.env
+.env.*
+
+# tests
+screenshots
+.env.test
+
+# skip
+.skip.config.json
+vite-plugin-react-uid.js
